@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <button type="button">Please DO NOT Submit the Form</button>
+        <p></p>
+        <!-- label的for對應input的id -->
+        <label for="username">Enter Username</label>
+        <input type="text" placeholder="username" id="username" name="username">
+        <p></p>
+        <label for="password">Enter Password</label>
+        <input type="password" placeholder="password" id="password" name="password">
+        <p></p>
+        <button>In the Middle</button>
+        <p></p>
+        <label for="color">Pick Color</label>
+        <input type="color" id="color" name="color">
+        <p></p>
+        <!-- 也可以寫成巢狀，但不常見 -->
+        <label>Enter Number
+            <input type="number" placeholder="enter a number" name="num">
+        </label>
+        <p></p>
+        <button type="submit">Submit</button>
+        <input type="reset" value="reset">
+    </form>
+    <!-- <form action="">
+        <input type=" text" placeholder="username">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <input type="button">
+            <input type="color">
+            <input type="number" placeholder="enter a number">
+            <input type="radio">
+            <input type="checkbox">
+            <input type="month">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="time">
+            <input type="file">
+    </form> -->
+</body>
+
+</html>
