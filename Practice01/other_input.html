@@ -10,11 +10,10 @@
 <body>
     <h2>More Inputs!</h2>
     <form action="/birds">
-        <input type="checkbox" name="agree_tos" id="agree">
-        <label for="agree">I agree for everything.</label>
-
-        <button>Submit</button>
-
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">I agree for everything.</label>
+        </p>
         <p>
             <input type="radio" name="size" id="big" value="bc">
             <label for="big">Big Cat</label>
@@ -24,8 +23,6 @@
 
             <input type="radio" name="size" id="small" value="sc">
             <label for="small">Small Cat</label>
-
-            <button>Submit</button>
         </p>
 
         <p>
@@ -38,9 +35,20 @@
                 <option value="pancake" selected>Panake</option>
                 <option value="juice">Juice</option>
             </select>
-
-            <button>Submit</button>
         </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" name="cheese_level" min="0" max="10" value="0">
+        </p>
+        <p>
+            <label for="num">數字也可以設定最小/大值</label>
+            <input type="number" id="num" name="number_deg" min="0" max="5" value="0">
+        </p>
+        <p>
+            <label for="request">輸入內文</label>
+            <textarea name="req_txt" id="request" cols="40" rows="10" placeholder="type something here"></textarea>
+        </p>
+        <p><button>Submit</button></p>
     </form>
 </body>
 

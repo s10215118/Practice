@@ -1,0 +1,51 @@
+h1{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+h1,h2{
+    color: #1d3537;
+}
+#name{
+    background-color: #1d3537;
+    color: #f1faee;
+}
+.tag{
+    color: #457b9d;
+    font-size: 20px;
+}
+input{
+    color: green;
+}
+input[type="password"]{
+    color: red;
+}
+/* h2[class="post"]{
+    background-color: purple;
+} */
+h2.post{
+    background-color: palevioletred;
+}
+
+.nth-post{
+    background-color: #e6a1e0;
+}
+
+.nth-post:nth-of-type(3){
+    background-color: #8ce7a7;
+}
+
+.nth-post:nth-of-type(4n){
+    background-color: #90acea;
+}
+p::first-letter{
+    font-size: 48px;
+}
+p::first-line{
+    color: purple;
+}
+::selection{
+    background-color: #84cf9a;
+}
+p::selection{
+    background-color: #fa0;
+}

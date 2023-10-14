@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Register of XXX</h1>
+    <form action="/register">
+        <h2><label for="email">Email</label></h2>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+
+        <h2><label for="full_name">Full Name</label></h2>
+        <input type="text" name="un" id="full_name" placeholder="Enter Your Name" required>
+
+        <h2><label for="password">Password(6~12 words)</label></h2>
+        <input type="password" name="pw" id=" password" placeholder="Enter Your Password" required minlength="6"
+            maxlength="12">
+
+        <h2><label for="confirn_password">Confirm Password</label></h2>
+        <input type="password" name="cpw" id="confirn_password" placeholder="Enter Your Password Again" required>
+
+        <p>
+            <input type="url" name="url" id="url" required>
+        </p>
+
+        <p>
+            <button type="submit">Register</button>
+        </p>
+    </form>
+</body>
+
+</html>
