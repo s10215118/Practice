@@ -241,3 +241,73 @@
 //     console.log(totalScore);
 // }
 // console.log(totalScore / studentScore.length);
+
+// function singSong(){
+//     console.log('Do');
+//     console.log('Re');
+//     console.log('Mi');
+// }
+// singSong();
+
+// function greet(firstName, lastName){
+//     console.log(`Hi, ${firstName} ${lastName[0]}.`);
+// }
+// greet('Michael','Hsieh');
+
+// function repeat(message, times){
+//     let result = '';
+//     for(let i = 0; i < times; i++){
+//         result +=message
+//     }
+//     console.log(result);
+// }
+// repeat('$',3);
+// repeat(10,'$');
+
+// let bird = 'eagle';
+// function birdWatch(){
+//     let bird = 'swallow';
+//     console.log(bird);
+// }
+// console.log(bird);
+// birdWatch();
+// console.log(bird);
+
+// const add = function(x,y){
+//     return x+y;
+// }
+// console.log(add(1,3));
+
+// function callTwice(func){
+//     func();
+//     func();
+// }
+// function rollDice(){
+//     const roll = Math.floor(Math.random()*6)+1;
+//     console.log(roll);
+// }
+// callTwice(rollDice);
+// // callTwice(rollDice()); //錯誤寫法
+
+// function makeMysterFunc(){
+//     const rand = Math.random();
+//     if(rand > 0.5){
+//         return function(){
+//             console.log('Congrats');
+//         };
+//     }else{
+//         return function(){
+//             alert("YOU HAVE BEEN INFECTED BY A COMPUTER VIRUS!");
+//         }
+//     }
+// }
+// const mystery = makeMysterFunc();
+// console.log(mystery());
+
+function makeBetweenFunc(min, max){
+    return function(num){
+        return num >= min && num <= max;
+    }
+}
+const testRange = makeBetweenFunc(50,100);
+console.log(testRange(70));
