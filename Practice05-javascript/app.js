@@ -178,25 +178,66 @@
 // }
 // console.log("CONGRATS!!!");
 
-let maximum = parseInt(prompt('Enter the maximum number!'));
-while(!maximum){
-    maximum = parseInt(prompt('Enter the maximum number!'));
-}
-const targetNum = Math.floor(Math.random() * maximum)+1;
-// console.log(targetNum);
-let guess = prompt("Enter your first guess!");
-let attempts = 1;
-while(parseInt(guess) !== targetNum){
-    if(guess.toLowerCase() === 'q') break;
-    attempts++;
-    if(parseInt(guess) > targetNum){
-        guess = prompt("Too high! Enter a new guess!");
-    }else{
-        guess = prompt("Too low! Enter a new guess!");
-    }
-}
-if(guess.toLowerCase() === 'q'){
-    console.log("OK, Quitting.");
-}else{
-    console.log(`You Got It!!! The targetNum is ${targetNum}. It took you ${attempts} guesses`);
-}
+// let maximum = parseInt(prompt('Enter the maximum number!'));
+// while(!maximum){
+//     maximum = parseInt(prompt('Enter the maximum number!'));
+// }
+// const targetNum = Math.floor(Math.random() * maximum)+1;
+// // console.log(targetNum);
+// let guess = prompt("Enter your first guess!");
+// let attempts = 1;
+// while(parseInt(guess) !== targetNum){
+//     if(guess.toLowerCase() === 'q') break;
+//     attempts++;
+//     if(parseInt(guess) > targetNum){
+//         guess = prompt("Too high! Enter a new guess!");
+//     }else{
+//         guess = prompt("Too low! Enter a new guess!");
+//     }
+// }
+// if(guess.toLowerCase() === 'q'){
+//     console.log("OK, Quitting.");
+// }else{
+//     console.log(`You Got It!!! The targetNum is ${targetNum}. It took you ${attempts} guesses`);
+// }
+
+// const subreddits = ['cringe','books','chickens', 'funny', 'pics', 'soccer', 'gunners'];
+// for(let sub of subreddits){
+//     console.log(sub);
+// }
+
+// const seatingChart =[
+//     ['Kristen', 'Erik', 'Namita'],
+//     ['Geoffrey', 'Juanita', 'Antonio', 'Kevin'],
+//     ['Yuma', 'Sakura', 'Jack', 'Erika']
+// ]
+// for(let row of seatingChart){
+//     for(let student of row){
+//         console.log(student);
+//     }
+// }
+
+// for(let char of "Hello World"){
+//     console.log(char);
+// }
+
+// const scores = {
+//     keenan: 80,
+//     damon: 67,
+//     kim: 89,
+//     shawn: 91,
+//     marlon: 72
+// }
+// for(let person in scores){
+//     console.log(`${person} scored ${scores[person]}`);
+// }
+// console.log(Object.keys(scores));
+// console.log(Object.values(scores));
+// console.log(Object.entries(scores));
+// let totalScore = 0;
+// let studentScore = Object.values(scores);
+// for(let score of studentScore){
+//     totalScore+=score;
+//     console.log(totalScore);
+// }
+// console.log(totalScore / studentScore.length);
