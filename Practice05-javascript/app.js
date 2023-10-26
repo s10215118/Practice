@@ -578,3 +578,165 @@
 // const total = evens.reduce((sum,num)=>(sum + num),100);
 // console.log(total);
 
+
+// function rollDie(numSides){
+//     return Math.floor(Math.random()*numSides)+1;
+// }
+// console.log(rollDie());
+// function rollDie(numSides){
+//     if(numSides === undefined){
+//         numSides = 6;
+//     }
+//     return Math.floor(Math.random()*numSides)+1;
+// }
+// console.log(rollDie());
+// function rollDie(numSides = 6){
+//     return Math.floor(Math.random()*numSides)+1;
+// }
+// console.log(rollDie());
+
+// function greet(msg = "Hi",person){
+//     console.log(`${msg}, ${person}!`);
+// }
+// greet('Michael');
+
+// const nums = [13,4,5,21,3,3,1,2,7,6,4,2,53456];
+// console.log(Math.max(nums));
+// console.log(Math.max(...nums));
+// console.log(...nums);
+
+// console.log('hello');
+// console.log(...'hello');
+
+// const cats = ['Blue','Scout','Rocket'];
+// const dogs = ['Rusty','Wyatt'];
+// const allPets = [...cats, ...dogs];
+// allPets.push('Nana');
+// console.log(...allPets);
+// console.log(...dogs);
+// console.log(...cats);
+
+// const feline = {legs: 4, family: 'Felidae'};
+// const canine = {isFurry: true, family: 'Caninae'};
+// const catDog = {...feline, ...canine};
+// console.log(catDog);
+
+// const num = {...[2,4,6,8]};
+// console.log(num);
+
+// const dataFromForm ={
+//     email: 'blueman@gmail.com',
+//     password: 'tobias123!',
+//     userName: 'tfunke'
+// };
+// const newUser = {...dataFromForm, id:2345, isAdmin: false};
+// console.log(newUser);
+
+// function sum(){
+//     return arguments.reduce((total,el)=>(total+el));
+// };
+// console.log(sum(3,4,5,6,7,8,1,2,3,4,1,2,3));
+
+// function sum(...nums){
+//     console.log(nums);
+//     return nums.reduce((total,el)=>(total+el));
+// }
+// console.log(sum(3,5));
+
+// function raceResults(gold, silver, ...everyoneElse){
+//     console.log(`GOLD MEDAL GOES TO: ${gold}`);
+//     console.log(`SILVER MEDAL GOES TO: ${silver}`);
+//     console.log(`AND THANKS TO EVERYONE ELSE: ${everyoneElse}`);
+// }
+// raceResults('Tammy','Todd','Tina','Trevor','Travis');
+
+// const scores = [929321,899341,888336,772739,543671,243567,111934];
+// const [gold, silver, bronze,...everyoneElse] = scores;
+// console.log(gold);
+// console.log(everyoneElse);
+
+// const user = {
+//     email: 'harvey@gmail.com',
+//     password: 'sCoTt1948sMiTh',
+//     firstName: 'Harvey',
+//     lastName: 'Milk',
+//     born: 1930,
+//     died: 1978,
+//     bio: 'Harvey Bernard Milk was an American politician an the first openly one.',
+//     city: 'San Francisco',
+//     state: 'California'
+// }
+// const {email, firstName, lastName, ...restPart} = user;
+// const {born : birthYear} = user;
+// console.log(email);
+// console.log(firstName);
+// console.log(lastName);
+// console.log(birthYear);
+// console.log(restPart);
+
+// const user = {
+//     email: 'harvey@gmail.com',
+//     password: 'sCoTt1948sMiTh',
+//     firstName: 'Harvey',
+//     lastName: 'Milk',
+//     born: 1930,
+//     died: 1978,
+//     bio: 'Harvey Bernard Milk was an American politician an the first openly one.',
+//     city: 'San Francisco',
+//     state: 'California'
+// };
+// function fullName({firstName, lastName}){
+//     return `${firstName} ${lastName}`;
+// }
+// console.log(fullName(user));
+
+// const movies = [
+//     {
+//         title: 'Amadeus',
+//         score: 99,
+//         year: 1984
+//     },
+//     {
+//         title: 'Sharknado',
+//         score: 35,
+//         year: 2013
+//     },
+//     {
+//         title: '13 Going On 30',
+//         score: 70,
+//         year: 2004
+//     },
+//     {
+//         title: 'Stand By Me',
+//         score: 85,
+//         year: 1986
+//     },
+//     {
+//         title: 'Waterworld',
+//         score: 62,
+//         year: 1995
+//     },
+//     {
+//         title: 'Jingle All The Way',
+//         score: 71,
+//         year: 1996
+//     },
+//     {
+//         title: 'Parasite',
+//         score: 95,
+//         year: 2019
+//     },
+//     {
+//         title: 'Notting Hill',
+//         score: 77,
+//         year: 1999
+//     },
+//     {
+//         title: 'Alien',
+//         score: 90,
+//         year: 1979
+//     }
+// ];
+// console.log(movies.filter((movie)=>(movie.score >= 90)));
+// console.log(movies.filter(({score})=>(score >= 90)));
+
