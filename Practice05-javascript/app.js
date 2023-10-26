@@ -433,3 +433,148 @@
 // newMovies.forEach(el=>console.log(el));
 // titles.forEach(el=>console.log(el));
 
+// console.log("Hello");
+// setTimeout(()=>(console.log('u still there...?')),3000);
+
+// const id = setInterval(()=>(console.log(Math.floor(Math.random()*6)+1)),2000);
+// setTimeout(()=>(clearInterval(id)),10001);
+
+// const movies = [
+//     {
+//         title: 'Amadeus',
+//         score: 99,
+//         year: 1984
+//     },
+//     {
+//         title: 'Sharknado',
+//         score: 35,
+//         year: 2013
+//     },
+//     {
+//         title: '13 Going On 30',
+//         score: 70,
+//         year: 2004
+//     },
+//     {
+//         title: 'Stand By Me',
+//         score: 85,
+//         year: 1986
+//     },
+//     {
+//         title: 'Waterworld',
+//         score: 62,
+//         year: 1995
+//     },
+//     {
+//         title: 'Jingle All The Way',
+//         score: 71,
+//         year: 1996
+//     },
+//     {
+//         title: 'Parasite',
+//         score: 95,
+//         year: 2019
+//     },
+//     {
+//         title: 'Notting Hill',
+//         score: 77,
+//         year: 1999
+//     },
+//     {
+//         title: 'Alien',
+//         score: 90,
+//         year: 1979
+//     }
+// ];
+// const greatMovies = movies.filter(movie =>{
+//     return movie.score >80
+// });
+// const badMovies = movies.filter(movie =>(movie.score<70));
+// greatMovies.forEach(greatMovie=>(
+//     console.log(`${greatMovie.title} - ${greatMovie.score}`)
+// ));
+// console.log('----------');
+// badMovies.forEach((badMovie => (console.log(`${badMovie.title} - ${badMovie.score}`))));
+// console.log('----------');
+// const recentMovies = movies.filter(m => m.year > 2000);
+// recentMovies.forEach((r)=>(console.log(`${r.title} - ${r.year}`)));
+// console.log('----------');
+// const goodTitles = greatMovies.map(m => m.title);
+// goodTitles.forEach((gt)=>console.log(gt));
+
+// const exams = [80,98,92,78,70,90,89,84,81,77];
+// console.log(exams.every(score=>score >=75));
+// console.log(exams.some(score=>score >=75));
+
+// const prices = [9.99,1.50,19.99,49.99,30.50];
+// const total = prices.reduce((summary,price)=>(summary+price));
+// console.log(total);
+
+// const prices = [9.99,1.50,19.99,49.99,30.50];
+// const total = prices.reduce((min,price)=>{
+//     if(price < min)  return price;
+//     else return min;
+// });
+// console.log(total);
+
+// const movies = [
+//     {
+//         title: 'Amadeus',
+//         score: 99,
+//         year: 1984
+//     },
+//     {
+//         title: 'Sharknado',
+//         score: 35,
+//         year: 2013
+//     },
+//     {
+//         title: '13 Going On 30',
+//         score: 70,
+//         year: 2004
+//     },
+//     {
+//         title: 'Stand By Me',
+//         score: 85,
+//         year: 1986
+//     },
+//     {
+//         title: 'Waterworld',
+//         score: 62,
+//         year: 1995
+//     },
+//     {
+//         title: 'Jingle All The Way',
+//         score: 71,
+//         year: 1996
+//     },
+//     {
+//         title: 'Parasite',
+//         score: 95,
+//         year: 2019
+//     },
+//     {
+//         title: 'Notting Hill',
+//         score: 77,
+//         year: 1999
+//     },
+//     {
+//         title: 'Alien',
+//         score: 90,
+//         year: 1979
+//     }
+// ];
+
+//  const bestMovie = movies.reduce((bestM, curM)=>{
+//     if(curM.score > bestM.score){
+//         return curM;
+//     }else{
+//         return bestM;
+//     }
+//  });
+//  console.log(bestMovie.title);
+
+// const evens = [2,4,6,8];
+// const total = evens.reduce((sum,num)=>(sum + num),100);
+// console.log(total);
+
