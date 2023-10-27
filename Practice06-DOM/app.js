@@ -52,36 +52,68 @@
 // }
 
 
-const makeRandomColor = ()=>{
-    const r = Math.floor(Math.random()*256);
-    const g = Math.floor(Math.random()*256);
-    const b = Math.floor(Math.random()*256);
-    const newColor = `rgb(${r},${g},${b})`;
-    return newColor;
-}
+// const makeRandomColor = ()=>{
+//     const r = Math.floor(Math.random()*256);
+//     const g = Math.floor(Math.random()*256);
+//     const b = Math.floor(Math.random()*256);
+//     const newColor = `rgb(${r},${g},${b})`;
+//     return newColor;
+// }
 
-for(let i = 0; i<36; i++){
-    const btn = document.createElement('button');
-    btn.innerText = 'CLICK';
-    btn.style.margin = '20px';
-    btn.style.width = '100px';
-    btn.style.height = '100px';
+// for(let i = 0; i<36; i++){
+//     const btn = document.createElement('button');
+//     btn.innerText = 'CLICK';
+//     btn.style.margin = '20px';
+//     btn.style.width = '100px';
+//     btn.style.height = '100px';
 
-    document.body.appendChild(btn);
-}
-for(let i=0; i < 10; i++){
-    const h1 = document.createElement('h1');
-    h1.innerText="CLICK ME!";
-    document.body.appendChild(h1);
-}
-const buttons = document.querySelectorAll('button');
-for(let btn of buttons){
-    btn.addEventListener('click',colorize);
-}
-const h1s = document.querySelectorAll('h1');
-for(let h1 of h1s){
-    h1.addEventListener('click',colorize);
-}
-function colorize(){
-    this.style.backgroundColor = makeRandomColor();
-}
+//     document.body.appendChild(btn);
+// }
+// for(let i=0; i < 10; i++){
+//     const h1 = document.createElement('h1');
+//     h1.innerText="CLICK ME!";
+//     document.body.appendChild(h1);
+// }
+// const buttons = document.querySelectorAll('button');
+// for(let btn of buttons){
+//     btn.addEventListener('click',colorize);
+// }
+// const h1s = document.querySelectorAll('h1');
+// for(let h1 of h1s){
+//     h1.addEventListener('click',colorize);
+// }
+// function colorize(){
+//     this.style.backgroundColor = makeRandomColor();
+// }
+
+
+const input = document.querySelector('input');
+input.addEventListener('keydown',function (e){
+    console.log(e.key);
+    console.log(e.code);
+});
+// input.addEventListener('keyup',function (){
+//     console.log("KEYUP");
+// });
+
+window.addEventListener('keydown',function(e){
+    // console.log(e.code);
+    console.dir(e);
+    console.log(e);
+    switch(e.code){
+        case 'ArrowUp':
+            console.log('Up');
+            break;
+        case 'ArrowDown':
+            console.log('Down');
+            break;
+        case 'ArrowLeft':
+            console.log('LEFT');
+            break;
+        case 'ArrowRight':
+            console.log('RIGHT');
+            break;
+        default:
+            console.log('IGNORED');
+    }
+});
